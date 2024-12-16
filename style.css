@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Game Title */
+.game-title {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+/* Player Inputs */
+.players h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.player-inputs {
+    margin-bottom: 20px;
+}
+
+.player-inputs input {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.start-button:disabled {
+    background-color: #ccc;
+}
+
+/* Board Section */
+.board h3 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box:hover {
+    background-color: #0056b3;
+}
+
+.box[data-lid="closed"] {
+    background-color: #6c757d;
+    pointer-events: none;
+}
+
+/* Dice Section */
+.dice-icons {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.dice h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.dice-buttons button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.dice-buttons button:disabled {
+    background-color: #ccc;
+}
+
+/* Scorecard Section */
+.scorecard {
+    margin-top: 30px;
+}
+
+.scorecard h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.scorecard p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Winner Section */
+.winner {
+    margin-top: 30px;
+}
+
+.winner h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #28a745;
+}
+.shut {
+    background-color: #ff6347;
+    color: white;
+    border-color: #000;
+}
